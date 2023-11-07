@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@300;500;700;800&family=Indie+Flower&family=Inter:wght@300;400;600;700&family=Karla:ital,wght@0,300;0,400;0,600;1,700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&family=Prata&family=Public+Sans:ital,wght@0,300;0,600;0,700;1,400&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500&family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+    --bg: #34495E;
+    --title: 'Poppins', sans-serif;
+    --text: 'Inter', sans-serif;
+    --padding: 60px 0
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: var(--title);
+    background: var(--bg);
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    filter: drop-shadow(0 0 16px steelblue);
+}
+
+.window{
+    width: 40%;
+    /* height: 60%; */
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.window__color{
+    background: #fff;
+    padding: var(--padding);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--text);
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.button{
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: crimson;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .window{
+        width: 90%;
+    }
+
+    .window__color{
+        font-size: 2rem;
+    }
+
+    .button{
+        font-size: 1.3rem;
+    }
+}
