@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@300;500;700;800&family=Indie+Flower&family=Inter:wght@300;400;600;700&family=Karla:ital,wght@0,300;0,400;0,600;1,700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&family=Prata&family=Public+Sans:ital,wght@0,300;0,600;0,700;1,400&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500&family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+    --bg-header: #fff;
+    --bg-carrito: #fff;
+    --font-title: 'Poppins', sans-serif;
+    --font-text: 'Open Sans', sans-serif;
+    --padding: 60px 0;
+    --color-text-1: #fff;
+    --color-text-2: #17202A;
+    --color-icon: #D5D8DC;
+    --bg-banner: url(/images/banner.avif);
+    --color-btn-carrito: #6C63FF;
+}
+
+body{
+    width: 100%;
+    font-family: var(--font-title);
+}
+
+/*Header*/
+.hero{
+    width: 100%;
+    background: var(--bg-header);
+}
+
+.hero__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero__picture{
+    width: 20%;
+}
+
+.hero__logo{
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/*Header Content*/
+.submenu{
+    list-style: none;
+    position: relative;
+}
+
+.icon{
+    font-size: 35px;
+    color: var(--color-icon);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-height: 400px;
+    min-width: 300px;
+    z-index: 1;
+    padding: 20px 10px;
+    background: var(--bg-carrito);
+}
+
+/*Tables*/
+th,
+td{
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-2);
+    text-align: left;
+    border-bottom: 1px solid #D5D8DC;
+}
+
+th:first-child,
+td:first-child{
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child{
+    padding-right: 0;
+}
+
+/*Clase para Borar Curso del Carrito*/
+.borrar-curso{
+    background: crimson;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--color-text-1);
+    cursor: pointer;
+}
+
+#lista-carrito{
+    margin-bottom: 20px;
+}
+
+#vaciar-carrito{
+    /* position: absolute;
+    bottom: 0; */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #D5D8DC;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-text);
+    color: #17202A;
+    text-decoration: none;
+}
+
+/*Contenido de la pagina web*/
+#principal{
+    width: 100%;
+}
+
+.section__information{
+    width: 100%;
+    background-image: var(--bg-banner);
+    background-size: cover;
+    padding: var(--padding);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-text-2);
+    margin-bottom: 20px;
+}
+
+.information__paragraph{
+    width: 50%;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: var(--color-text-2);
+    font-family: var(--font-text);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    width: 50%;
+}
+
+.form__container{
+    width: 100%;
+    flex-direction: row;
+}
+
+.input{
+    width: 80%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--color-text-2);
+    font-family: var(--font-text);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    position: relative;
+}
+
+.btn-submit{
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/*Section Cursos*/
+.cursos{
+    width: 100%;
+    background: #F8F9F9;
+    padding: var(--padding);
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-text-2);
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    font-size: 1.2rem;
+    font-family: var(--font-text);
+    font-weight: 400;
+    color: var(--color-text-2);
+    margin-bottom: 40px;
+}
+
+.cards__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    margin-bottom: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__picture{
+    width: 100%;
+}
+
+.card__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.info__card{
+    width: 100%;
+    padding: 20px 15px;
+}
+
+.info-title{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--color-text-2);
+}
+
+.autor{
+    font-size: 1rem;
+    font-family: var(--font-text);
+    font-weight: 400;
+    color: var(--color-text-2);
+    margin-bottom: 15px;
+}
+
+.img-stars{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.price__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.price__original{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font-text);
+    text-decoration: line-through;
+}
+
+.price{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.cta{
+    display: block;
+    width: 100%;
+    background: var(--color-btn-carrito);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-1);
+    font-family: var(--font-text);
+    transition: all .5s ease;
+}
+
+.cta:hover{
+    background: #5DADE2;
+}
+
+/*Footer*/
+#footer{
+    width: 100%;
+    height: 20vh;
+    background: var(--color-icon);
+}
+
+.footer__container{
+    padding: var(--padding);
+}
+
+.copy{
+    width: 100%;
+    text-align: right;
+    font-size: 1.3rem;
+    color: var(--color-text-2);
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 768px){
+    .hero__container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .hero__logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .section__information{
+        background-image: linear-gradient(rgba(255, 255, 255, 0.397), rgba(0, 0, 0, 0.288)),
+        var(--bg-banner);
+        background-size: 900px;
+        background-attachment: fixed;
+    }
+
+    .title{
+        font-size: 2rem;
+        filter: drop-shadow(0 0 10px rgba(255,255,255,.8));
+    }
+
+    .information__paragraph{
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+    }
+
+    .paragraph{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .copy{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .submenu:hover #carrito{
+        min-width: 100px;
+        padding: 10px;
+        right: -10px;
+    }
+
+    th,
+    td{
+    
+        font-size: 12px;;
+        font-weight: 500;
+        color: var(--color-text-2);
+        text-align: left;
+        border-bottom: 1px solid #D5D8DC;
+    }
+
+    #vaciar-carrito{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
