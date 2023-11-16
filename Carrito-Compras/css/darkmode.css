@@ -1,0 +1,95 @@
+:root{
+    --color1:  #1c2833;
+    --color2: #fff;
+    --bg-links: #6C63FF;
+    --bg-addcart:  #f39c12 ;
+    --bg-darkmode: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.darkmode .hero{
+    background: rgb(47, 47, 47);
+}
+
+.darkmode .hero__link{
+    color: var(--color2);
+    border-top: 2px solid transparent;
+}
+
+.darkmode .hero__link:hover{
+    border-top: 2px solid #fff;
+}
+
+.darkmode .icon-cart{
+    color: var(--color2);
+}
+
+.darkmode .carrito__main:hover #carrito{
+    background: rgb(47, 47, 47);
+}
+
+.darkmode th,
+.darkmode td{
+    color: var(--color2);
+}
+
+.darkmode #vaciar-carrito{
+    background: var(--color2);
+    color: var(--color1);
+}
+
+.darkmode .navegation__hero{
+    background: rgb(47, 47, 47);
+}
+
+.darkmode .links{
+    color: var(--color2);
+}
+
+.darkmode #open-menu,
+.darkmode #close-menu{
+    background: var(--color2);
+    color: var(--color1);
+}
+
+.darkmode #dark-btn{
+    background: var(--color2);
+    color: var(--color1);
+}
+
+.darkmode .cursos{
+    background: rgb(47, 47, 47);
+}
+
+.darkmode .title,
+.darkmode .paragraph{
+    color: var(--color2);
+}
+
+.darkmode .card{
+    background: rgb(47, 47, 47);
+}
+
+.darkmode .titulo,
+.darkmode .autor,
+.darkmode .original,
+.darkmode .descount{
+    color: var(--color2);
+}
+
+.darkmode #footer{
+    background: rgb(47, 47, 47);
+}
+
+.darkmode .info-title,
+.darkmode .info-p,
+.darkmode .social__link{
+    color: var(--color2);
+}
+
+.darkmode .icon{
+    color: var(--color2);
+}
+
+.darkmode .copy{
+    color: var(--color2);
+}

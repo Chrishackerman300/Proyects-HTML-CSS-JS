@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/darkmode.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Carrito de Compras Proyect</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="hero">
+        <section class="hero__main">
+            <figure class="hero__picture">
+                <img src="/images/logo.png" alt="logo" class="logo">
+            </figure>
+
+            <div class="hero__links">
+                <a href="#" class="hero__link">Inicio</a>
+                <a href="#" class="hero__link">Ayuda</a>
+                <a href="#" class="hero__link">Iniciar Sesión</a>
+            </div>
+
+            <!--Carrito de Compras-->
+            <div class="carrito__main">
+                <button id="carrito-btn"><i class="bi bi-cart-fill icon-cart"></i></button>
+
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Sidebar Menu-->
+        <button id="open-menu"><i class="bi bi-list icon-menu"></i></button>
+
+        <nav class="navegation__hero">
+            <button id="close-menu"><i class="bi bi-x icon-menu"></i></button>
+            <div class="navegation__items">
+                <a href="#" class="links"><i class="bi bi-house-fill icon"></i>Inicio</a>
+                <a href="#" class="links"><i class="bi bi-people-fill icon"></i>Nosotros</a>
+                <a href="#" class="links"><i class="bi bi-person-badge-fill icon"></i>Acerca de</a>
+                <a href="#" class="links"><i class="bi bi-info-circle-fill icon"></i>Ayuda</a>
+                <a href="#" class="links"><i class="bi bi-person-fill icon"></i>Cuenta</a>
+                <button id="dark-btn"><i class="bi bi-cloud-moon-fill icon-dark"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!--Contenido Principal-->
+    <main id="principal">
+        <section class="banner">
+            <div class="banner__main container1">
+                <h1 class="banner-info">Sólo por esté buen fin, todos nuestros cursos esta al precio de una pizza!</h1>
+                <a href="#" class="info__cta">Más Información</a>
+            </div>
+        </section>
+
+        <section id="lista-cursos" class="cursos">
+            <div class="cursos__main container">
+                <h1 class="title">Lista de Cursos:</h1>
+                <p class="paragraph">Estos son nuestros cursos más comprados por los usuario:</p>
+
+                <div class="cursos__content">
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image1.jpg" alt="image1" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">JavaScript Moderno a Avanzado</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="1">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image2.jpg" alt="image2" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">Aprende Cocina para Principiantes</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="2">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image3.jpg" alt="image3" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">Aprende Guitarra para Principiantes</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="3">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image1.jpg" alt="image4" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">Programación en Python Desde cero</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="4">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image2.jpg" alt="image5" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">Cocina Mexicana</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="5">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image3.jpg" alt="image6" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">Teoría Músical</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="6">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image1.jpg" alt="image7" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">HTML5 y CSS3 Master</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="7">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image2.jpg" alt="image8" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">Comidas Culturales</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="8">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__picture">
+                            <img src="/images/image3.jpg" alt="image9" class="card__img">
+                        </figure>
+
+                        <div class="info">
+                            <h4 class="titulo">Aprende Piano desde cero</h4>
+                            <p class="autor">Chrisitan Mendoza</p>
+                            <img src="/images/estrellas.png" alt="stars-image" class="stars-img">
+                            <div class="prices">
+                                <p class="original">$200</p>
+                                <p class="descount">$15</p>
+                            </div>
+                            <a href="#" class="cta agregar-carrito" data-id="9">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer__main container">
+            <figure class="footer__picture">
+                <img src="/images/logo.png" alt="logo" class="logo">
+            </figure>
+
+            <div class="footer__content">
+                <div class="location">
+                    <div class="gps">
+                        <i class="bi bi-geo-alt-fill icon"></i>
+                        <p class="info-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam doloremque error ut exercitationem voluptatibus laboriosam minima optio sed obcaecati eum.</p>
+                    </div>
+                    <div class="tel">
+                        <i class="bi bi-telephone-fill icon"></i>
+                        <p class="info-p">01800-5419-6790</p>
+                    </div>
+                </div>
+
+                <div class="about">
+                    <h4 class="info-title">Nosotros</h4>
+                    <p class="info-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo magni ipsam pariatur aut ipsum voluptatibus rerum similique soluta, architecto porro.</p>
+                </div>
+
+                <div class="social">
+                    <h4 class="info-title">Social Networks</h4>
+
+                    <div class="social__items">
+                        <a href="#" class="social__link"><i class="bi bi-facebook icon"></i>Facebook</a>
+                        <a href="#" class="social__link"><i class="bi bi-instagram icon"></i>Instagram</a>
+                        <a href="#" class="social__link"><i class="bi bi-twitter-x icon"></i>Twitter</a>
+                        <a href="#" class="social__link"><i class="bi bi-tiktok icon"></i>Tiktok</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copy">&copy;ProgramadorJS 2023</p>
+        </div>
+    </footer>
+
+    <button id="information">Ver Información</button>
+
+    <!--Arcchivo script-->
+    <script src="/js/app.js"></script>
+</body>
+</html>
