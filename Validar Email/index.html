@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/Proyecto__Validar-Email/css/style.css">
+    <link rel="stylesheet" href="/Proyecto__Validar-Email/css/normalize.css">
+    <link rel="stylesheet" href="/Proyecto__Validar-Email/css/spinner.css">
+    <title>Proyecto Validar Email</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Validar Correo Electronico (Email)</h1>
+
+            <form id="formulario" class="formulario">
+
+                <div class="input__container">
+                    <input type="email" name="email" id="email" class="input" placeholder="">
+                    <label for="email" class="label">Escribir Email:</label>
+                </div>
+
+                <div class="input__container">
+                    <input type="text" name="asunto" id="asunto" class="input" placeholder="">
+                    <label for="asunto" class="label">Escribir Asunto:</label>
+                </div>
+
+                <div class="input__container">
+                    <input type="text" name="mensaje" id="mensaje" class="input" placeholder="">
+                    <label for="mensaje" class="label">Escribir Mensaje</label>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="btn btn-submit" id="btn-submit" disabled>
+                        <i class="bi bi-send-fill icons"></i>
+                        Enviar
+                    </button>
+
+                    <button type="reset" class="btn btn-reset" id="btn-reset">
+                        <i class="bi bi-trash3-fill icons"></i>
+                        Eliminar
+                    </button>
+                </div>
+
+                <div class="spinner__container">
+                    <div class="spinner">
+                        <div class="sk-chase">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                          </div>
+                </div>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <p class="copy">&copy;ProgramadorJS/2023</p>
+        </footer>
+    </section>
+
+    <script src="/Proyecto__Validar-Email/js/app.js"></script>
+</body>
+</html>
